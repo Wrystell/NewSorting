@@ -18,9 +18,15 @@ class Toolbar
                 $subject->getCollection()->setOrder('created_at', 'desc');
             }
             */
+            /*
             if ($currentOrder == 'position') {
                 $subject->getCollection()->setOrder('created_at', 'desc');
             }
+            */
+            if ($currentOrder == 'position') {
+                $subject->getCollection()->setOrder('price', 'desc');
+            }
+
         }
 
         return $result;
